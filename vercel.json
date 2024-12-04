@@ -1,0 +1,15 @@
+{
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/node",
+        "config": {
+          "maxDuration": 10
+        }
+      }
+    ],
+    "env": {
+      "DATABASE_URL": "file:./dev.db"
+    }
+  }
+  
